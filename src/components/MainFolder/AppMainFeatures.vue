@@ -66,6 +66,7 @@ export default {
   background-image: url(../../../public/img/gym_bkgd_bw-compressor.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .__icon {

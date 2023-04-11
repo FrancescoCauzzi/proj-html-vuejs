@@ -31,5 +31,6 @@ export default {
   <AppMainFeatures></AppMainFeatures>
   <AppMainTestimonials></AppMainTestimonials>
   <AppMainFacilities></AppMainFacilities>
+  <AppMainMotivation></AppMainMotivation>
 </template>
 <style scoped></style>
