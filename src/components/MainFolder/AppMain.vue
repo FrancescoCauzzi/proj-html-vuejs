@@ -30,5 +30,6 @@ export default {
   <AppMainSignUp></AppMainSignUp>
   <AppMainFeatures></AppMainFeatures>
   <AppMainTestimonials></AppMainTestimonials>
+  <AppMainFacilities></AppMainFacilities>
 </template>
 <style scoped></style>

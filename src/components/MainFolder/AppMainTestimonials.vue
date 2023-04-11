@@ -44,7 +44,7 @@ export default {
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
       <div class="__card-container d-flex flex-wrap">
-        <div v-for="item in testimonials" class="__card d-flex p-5">
+        <div v-for="item in testimonials" class="__card d-flex p-4">
           <div class="__img">
             <img
               :src="`../../../public/img/${item.img}`"
