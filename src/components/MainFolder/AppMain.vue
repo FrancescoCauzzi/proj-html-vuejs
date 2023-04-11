@@ -1,11 +1,11 @@
 <script>
-import AppMainWC from "./AppMainWC";
-import AppMainSignUp from "./AppMainSignUp";
-import AppMainFeatures from "./AppMainFeatures";
-import AppMainTestimonials from "./AppMainTestimonials";
-import AppMainMotivation from "./AppMainMotivation";
-import AppMainTrainers from "./AppMainTrainers";
-import AppMainNews from "./AppMainNews";
+import AppMainWC from "./AppMainWC.vue";
+import AppMainSignUp from "./AppMainSignUp.vue";
+import AppMainFeatures from "./AppMainFeatures.vue";
+import AppMainTestimonials from "./AppMainTestimonials.vue";
+import AppMainMotivation from "./AppMainMotivation.vue";
+import AppMainTrainers from "./AppMainTrainers.vue";
+import AppMainNews from "./AppMainNews.vue";
 
 export default {
   name: "AppMain",
@@ -23,5 +23,7 @@ export default {
   },
 };
 </script>
-<template></template>
+<template>
+  <AppMainWC></AppMainWC>
+</template>
 <style scoped></style>
