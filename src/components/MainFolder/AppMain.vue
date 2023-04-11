@@ -25,5 +25,6 @@ export default {
 </script>
 <template>
   <AppMainWC></AppMainWC>
+  <AppMainSignUp></AppMainSignUp>
 </template>
 <style scoped></style>
