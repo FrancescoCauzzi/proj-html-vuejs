@@ -25,7 +25,7 @@ export default {
           srcset=""
         />
       </div>
-      <div class="__links">
+      <div class="__links d-flex align-items-center">
         <ul class="d-flex gap-3 fw-bold">
           <li v-for="item in links">
             <a href="">{{ item.name.toUpperCase() }}</a>
@@ -39,6 +39,10 @@ export default {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  color: orange;
 }
 
 li {
