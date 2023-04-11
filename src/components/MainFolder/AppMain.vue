@@ -3,6 +3,7 @@ import AppMainWC from "./AppMainWC.vue";
 import AppMainSignUp from "./AppMainSignUp.vue";
 import AppMainFeatures from "./AppMainFeatures.vue";
 import AppMainTestimonials from "./AppMainTestimonials.vue";
+import AppMainFacilities from "./AppMainFacilities.vue";
 import AppMainMotivation from "./AppMainMotivation.vue";
 import AppMainTrainers from "./AppMainTrainers.vue";
 import AppMainNews from "./AppMainNews.vue";
@@ -17,6 +18,7 @@ export default {
     AppMainSignUp,
     AppMainFeatures,
     AppMainTestimonials,
+    AppMainFacilities,
     AppMainMotivation,
     AppMainTrainers,
     AppMainNews,
@@ -27,5 +29,6 @@ export default {
   <AppMainWC></AppMainWC>
   <AppMainSignUp></AppMainSignUp>
   <AppMainFeatures></AppMainFeatures>
+  <AppMainTestimonials></AppMainTestimonials>
 </template>
 <style scoped></style>
