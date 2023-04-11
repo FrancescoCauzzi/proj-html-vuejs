@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="container-fluid __container-outer py-5">
     <div
-      class="container __container-inner d-flex gap-5 justify-content-center py-5"
+      class="container __container-inner d-flex gap-5 justify-content-center py-5 flex-wrap"
     >
       <div class="__image">
         <img
@@ -48,5 +48,9 @@ export default {
 /* 1f2123 */
 .__container-outer {
   background-color: #1f2123;
+}
+
+.__container-inner {
+  min-width: 350px;
 }
 </style>

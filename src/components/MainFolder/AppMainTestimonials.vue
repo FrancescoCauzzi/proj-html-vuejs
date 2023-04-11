@@ -43,8 +43,8 @@ export default {
       <div class="__stars d-flex gap-2 py-4">
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
-      <div class="__card-container d-flex flex-wrap">
-        <div v-for="item in testimonials" class="__card d-flex p-4">
+      <div class="__card-container d-flex flex-wrap justify-content-center">
+        <div v-for="item in testimonials" class="__card d-flex flex-wrap p-4">
           <div class="__img">
             <img
               :src="`../../../public/img/${item.img}`"
@@ -52,7 +52,7 @@ export default {
               srcset=""
             />
           </div>
-          <div class="__card-paragraph px-3">
+          <div class="__card-paragraph py-1 px-3">
             <p>"{{ item.text }}""</p>
             <div class="__name fw-bold">- {{ item.name }}</div>
           </div>
@@ -69,10 +69,12 @@ export default {
 .__card {
   width: calc(100% / 2 * 1 - (30px / 2 * 1));
   background-color: #1f2123;
+  min-width: 300px;
 }
 
 .__card-paragraph {
   font-style: italic;
+  flex-basis: 300px;
 }
 .__card-container {
   gap: 30px;

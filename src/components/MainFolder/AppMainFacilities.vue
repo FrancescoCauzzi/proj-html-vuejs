@@ -24,8 +24,8 @@ export default {
       <div class="__stars d-flex gap-2 py-4">
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
-      <div class="__images-container d-flex flex-wrap">
-        <div v-for="item in images" class="__image">
+      <div class="__images-container d-flex flex-wrap justify-content-center">
+        <div v-for="item in images" class="__image-holder">
           <img :src="`../../../public/img/${item.image}`" alt="" srcset="" />
         </div>
       </div>
@@ -38,13 +38,15 @@ export default {
 }
 
 .__images-container {
-  gap: 30px;
+  gap: 40px;
 }
-.__image {
-  width: calc(100% / 3 * 1 - (30px / 3 * 2));
+.__image-holder {
+  width: calc(100% / 3 * 1 - (40px / 3 * 2));
+  flex-basis: 300px;
 }
 
-.__image img {
+.__image-holder img {
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }

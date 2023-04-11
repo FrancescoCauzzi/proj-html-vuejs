@@ -43,10 +43,12 @@ export default {
 </script>
 <template>
   <div class="container-fluid __container-outer py-5">
-    <div class="container __container-inner py-5 d-flex gap-3">
+    <div
+      class="container __container-inner py-5 d-flex gap-3 flex-wrap justify-content-center"
+    >
       <div
         v-for="item in items"
-        class="d-flex flex-column gap-2 align-items-center"
+        class="__features d-flex flex-column gap-2 align-items-center"
         :class="`__${item.name}`"
       >
         <div class="__icon d-flex justify-content-center align-items-center">
@@ -69,6 +71,9 @@ export default {
   background-position: center;
 }
 
+.__features {
+  flex-basis: 250px;
+}
 .__icon {
   color: #ee6059;
   font-size: 3em;

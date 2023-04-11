@@ -54,7 +54,7 @@ export default {
       <div class="__stars d-flex gap-2 py-4 mb-4">
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
-      <div class="__cards d-flex flex-wrap">
+      <div class="__cards d-flex flex-wrap justify-content-center">
         <div v-for="item in trainers" class="__card">
           <div class="__img-container">
             <img :src="`../../../public/img/${item.img}`" alt="" srcset="" />
@@ -90,6 +90,7 @@ export default {
 .__card {
   width: calc(100% / 3 * 1 - (40px / 3 * 2));
   background-color: #25292b;
+  flex-basis: 300px;
 }
 .__card img {
   height: 100%;
