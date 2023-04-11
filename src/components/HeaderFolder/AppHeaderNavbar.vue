@@ -19,11 +19,7 @@ export default {
   <div class="text-white">
     <div class="container __nav-container d-flex justify-content-between">
       <div class="__logo">
-        <img
-          src="../../../public/img/gym_logo_1x.png"
-          alt="Cannot retrieve image"
-          srcset=""
-        />
+        <img src="/img/gym_logo_1x.png" alt="Cannot retrieve image" srcset="" />
       </div>
       <div class="__links d-flex align-items-center">
         <ul class="d-flex gap-3 fw-bold">

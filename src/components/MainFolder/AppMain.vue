@@ -33,5 +33,6 @@ export default {
   <AppMainFacilities></AppMainFacilities>
   <AppMainMotivation></AppMainMotivation>
   <AppMainTrainers></AppMainTrainers>
+  <AppMainNews></AppMainNews>
 </template>
 <style scoped></style>

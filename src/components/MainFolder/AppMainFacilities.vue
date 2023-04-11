@@ -26,7 +26,7 @@ export default {
       </div>
       <div class="__images-container d-flex flex-wrap justify-content-center">
         <div v-for="item in images" class="__image-holder">
-          <img :src="`../../../public/img/${item.image}`" alt="" srcset="" />
+          <img :src="`/img/${item.image}`" alt="" srcset="" />
         </div>
       </div>
     </div>

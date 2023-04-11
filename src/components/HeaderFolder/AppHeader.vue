@@ -28,7 +28,7 @@ export default {
 </template>
 <style scoped>
 .__container-outer {
-  background-image: url(../../../public/img/home-banner.jpg);
+  background-image: url(/img/home-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 

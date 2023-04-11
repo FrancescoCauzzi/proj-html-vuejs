@@ -22,7 +22,7 @@ export default {
 </template>
 <style scoped>
 .__container-outer {
-  background-image: url(../../../public/img/home-testimonial-bg.jpg);
+  background-image: url(/img/home-testimonial-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

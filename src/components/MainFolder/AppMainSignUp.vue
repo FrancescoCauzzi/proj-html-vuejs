@@ -13,7 +13,7 @@ export default {
     >
       <div class="__image">
         <img
-          src="../../../public/img/home_img-compressor.jpg"
+          src="/img/home_img-compressor.jpg"
           alt="Cannot retrieve image"
           srcset=""
         />

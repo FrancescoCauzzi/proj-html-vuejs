@@ -65,7 +65,7 @@ export default {
 </template>
 <style scoped>
 .__container-outer {
-  background-image: url(../../../public/img/gym_bkgd_bw-compressor.jpg);
+  background-image: url(/img/gym_bkgd_bw-compressor.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

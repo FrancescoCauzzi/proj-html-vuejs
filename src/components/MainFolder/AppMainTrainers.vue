@@ -57,7 +57,7 @@ export default {
       <div class="__cards d-flex flex-wrap justify-content-center">
         <div v-for="item in trainers" class="__card">
           <div class="__img-container">
-            <img :src="`../../../public/img/${item.img}`" alt="" srcset="" />
+            <img :src="`/img/${item.img}`" alt="" srcset="" />
           </div>
           <div class="__description d-flex flex-column p-5 gap-3">
             <h6 class="text-white">{{ item.name }}</h6>
@@ -109,6 +109,7 @@ export default {
   background-color: #1f2123;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 }
 .__stars {
   color: gold;

@@ -47,7 +47,7 @@ export default {
         <div v-for="item in testimonials" class="__card d-flex flex-wrap p-4">
           <div class="__img">
             <img
-              :src="`../../../public/img/${item.img}`"
+              :src="`/img/${item.img}`"
               alt="Cannot retrieve image"
               srcset=""
             />
