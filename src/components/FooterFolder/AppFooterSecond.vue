@@ -80,7 +80,7 @@ export default {
 .__container-inner > * {
   width: calc(100% / 4 * 1 - (30px / 4 * 3));
   flex-basis: 280px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   padding-right: 30px;
 }
 
