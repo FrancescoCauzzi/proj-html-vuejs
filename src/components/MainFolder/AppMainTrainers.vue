@@ -54,7 +54,7 @@ export default {
       <div class="__stars d-flex gap-2 py-4 mb-4">
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
-      <div class="__cards d-flex flex-wrap justify-content-center">
+      <div class="__cards d-flex flex-wrap justify-content-center mb-5">
         <div v-for="item in trainers" class="__card">
           <div class="__img-container">
             <img :src="`/img/${item.img}`" alt="" srcset="" />
@@ -75,6 +75,14 @@ export default {
             </div>
           </div>
         </div>
+      </div>
+      <div class="__articles-button">
+        <button
+          type="button"
+          class="btn btn-outline-secondary text-uppercase fw-bold"
+        >
+          Meet our trainers
+        </button>
       </div>
     </div>
   </div>

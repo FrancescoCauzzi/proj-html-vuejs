@@ -55,12 +55,30 @@ export default {
     <div
       class="container __container-inner d-flex flex-column align-items-center py-5"
     >
-      <h2 class="text-uppercase text-white">Performace news</h2>
+      <h2 class="text-uppercase text-white">Performance news</h2>
       <div class="__stars d-flex gap-2 py-4 mb-4">
         <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
       </div>
-      <div class="__cards-container d-flex flex-wrap">
-        <div class="__card"></div>
+      <div
+        class="__cards-container d-flex flex-wrap justify-content-center align-items-start mb-5"
+      >
+        <div v-for="item in articles" class="__card">
+          <div class="__img-ctnr">
+            <img :src="`/img/${item.image}`" alt="" srcset="" />
+          </div>
+          <div class="__article-text p-4">
+            <h6 class="text-white">{{ item.title }}</h6>
+            <p class="__paragraph">{{ item.text }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="__articles-button">
+        <button
+          type="button"
+          class="btn btn-outline-secondary text-uppercase fw-bold"
+        >
+          Read all articles
+        </button>
       </div>
     </div>
   </div>
@@ -70,7 +88,42 @@ export default {
   background-color: #25292b;
 }
 
-.__stars {
-  color: gold;
+.__cards-container {
+  gap: 30px;
+}
+
+.__cards-container .__card {
+  width: calc(100% / 3 * 1 - (30px / 3 * 2));
+  flex-basis: 350px;
+  background-color: #1f2123;
+}
+
+.__img-ctnr {
+  width: 100%;
+}
+
+.__card .__img-ctnr img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .__article-text {
+  
+} */
+
+.__paragraph {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  color: #aaa9a9;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.__paragraph::after {
+  content: "\2026";
 }
 </style>
