@@ -21,6 +21,14 @@ export default {
       ],
     };
   },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+  },
 };
 </script>
 <template>
@@ -47,13 +55,24 @@ export default {
         </div>
       </div>
     </div>
+    <div class="__slider text-white py-2 px-3" @click="scrollToTop">
+      <span><i class="fa-solid fa-chevron-up"></i></span>
+    </div>
   </div>
 </template>
 <style scoped>
 .__container-outer {
   background-color: #1a1c1e;
+  position: relative;
 }
 
+.__slider {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  background-color: #303131;
+  cursor: pointer;
+}
 .__credits {
   color: #999999;
 }
