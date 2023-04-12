@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container-fluid __container-outer py-3">
+  <div class="container-fluid __container-outer py-3" id="section1">
     <AppHeaderNavbar></AppHeaderNavbar>
     <div class="__header-title d-flex flex-column align-items-center gap-3">
       <h1 class="text-uppercase __motivation-title fw-bold text-white">

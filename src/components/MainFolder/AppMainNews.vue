@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container-fluid __container-outer py-5">
+  <div class="container-fluid __container-outer py-5" id="section6">
     <div
       class="container __container-inner d-flex flex-column align-items-center py-5"
     >

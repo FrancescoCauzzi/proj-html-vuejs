@@ -7,7 +7,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container-fluid __container-outer text-center py-5">
+  <div class="container-fluid __container-outer text-center py-5" id="section2">
     <div
       class="container __container-inner d-flex align-items-center flex-column"
     >
