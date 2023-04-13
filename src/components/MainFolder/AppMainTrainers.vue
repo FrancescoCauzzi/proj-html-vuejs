@@ -100,12 +100,17 @@ export default {
   background-color: #25292b;
   flex-basis: 300px;
 }
-.__card img {
+.__card .__img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
 
+.__card .__img-container:hover img {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
 .__paragraph {
   color: #aaa9a9;
 }
