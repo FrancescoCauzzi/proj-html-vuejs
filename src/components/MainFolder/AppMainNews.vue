@@ -65,6 +65,16 @@ export default {
         <div v-for="item in articles" class="__card">
           <div class="__img-ctnr">
             <img :src="`/img/${item.image}`" alt="" srcset="" />
+            <div class="__hidden-div">
+              <div
+                class="__hidden-inner d-flex justify-content-center align-items-center gap-3 text-center"
+              >
+                <span><i class="fa-solid fa-link __hidden-icons"></i></span>
+                <span
+                  ><i class="fa-solid fa-magnifying-glass __hidden-icons"></i
+                ></span>
+              </div>
+            </div>
           </div>
           <div class="__article-text p-4">
             <h6 class="text-white">{{ item.title }}</h6>
@@ -100,18 +110,42 @@ export default {
 
 .__img-ctnr {
   width: 100%;
+  position: relative;
 }
-
 .__card .__img-ctnr img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-/* .__article-text {
-  
-} */
+.__card .__img-ctnr:hover .__hidden-div {
+  opacity: 0.8;
+  display: block;
+}
+.__hidden-div {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: #ee6059;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 0;
+}
 
+.__hidden-inner {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.__hidden-icons {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
 .__paragraph {
   display: -webkit-box;
   -webkit-box-orient: vertical;

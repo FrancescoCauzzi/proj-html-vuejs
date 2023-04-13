@@ -49,8 +49,13 @@ export default {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: transform 0.2s ease-in-out;
 }
 
+.__image-holder:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .__stars {
   color: gold;
 }
